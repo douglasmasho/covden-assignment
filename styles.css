@@ -8,6 +8,10 @@ body{
     --dark-gray: #333;
 }
 
+.u-margin-bottom{
+  margin-bottom: 3rem;
+}
+
 .center-hrz{
   display: flex;
   flex-direction: row;
@@ -391,6 +395,7 @@ body{
   text-transform: capitalize;
   cursor: pointer;
   transition: all.3s;
+  margin-bottom: 1rem;
 }
 
 .tags-container a:hover{
@@ -436,6 +441,12 @@ body{
     text-align: center;
     vertical-align: top;
     position: relative;
+    transition: all .3s;
+    cursor: pointer;
+  }
+
+  .next-page-btn:hover{
+    background-color: var(--pink);
   }
 
   .next-page-btn a ion-icon{
