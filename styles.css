@@ -80,7 +80,7 @@ body{
     padding: 0 !important;
     font-size: 0.8rem !important;
     position: absolute;
-    right: 10px;
+    right: 25px;
     top: 40px;
     transform: translateY(-50%);
 }
@@ -633,6 +633,9 @@ body{
     flex-basis: 100%;
   }
 
+  .footer-row{
+    margin-left: 20px !important;
+  }
 
 }
 
@@ -649,4 +652,77 @@ body{
     margin: 0 !important;
   }
   
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 75px;
+  right: 20px;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background-color: #E95CCD;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 50px;
+  border: 0px;
+  font-size: 25px;
+  display: none;
+  transition: all .5s;
+}
+
+.notifications-container{
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 10;
+}
+
+.notifications-btn{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(214, 0, 0);
+  color: #fff;
+  border-radius: 50px;
+  border: 0px;
+  font-size: 25px;
+  transition: all .5s;
+  position: relative;
+}
+
+.notifications-message{
+  position: absolute;
+  top: 10%;
+  right: 60px;
+  /* width: 200px; */
+  padding: 10px;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size:  16px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s;
+    width: 0;
+}
+
+.notifications-message p{
+  margin-bottom: 0px;
+}
+
+.scrollIcon.active{
+  animation: slideUp;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+@keyframes slideUp{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-60px);
+  }
 }
